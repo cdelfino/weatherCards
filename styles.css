@@ -5,23 +5,22 @@
 }
 
 .glass{
-    width: 648px;
-    height: 760px;
-    background: linear-gradient(143.98deg, rgba(255, 255, 255, 0.21) 0%, rgba(255, 255, 255, 0.21) 100%);
+    background: linear-gradient(143.98deg, rgba(255, 255, 255, 0.51) 0%, rgba(255, 255, 255, 0.21) 100%);
     backdrop-filter: blur(25px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 30px;   
+    border-radius: 30px;
     border: none;
-
+    z-index: 3;
+    position: fixed;
+    width: 64%;
+    top: 8%;
+    height: 80%;
 }
 
 body{
     background-image: linear-gradient(to right bottom, #f0f0f0, #d9dbeb, #b9c9e6, #90b9e1, #659ab7);
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+    width: 100%;
 }
 
 .container{
@@ -29,6 +28,28 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 78px;
     width: 80%;
+    margin: 0 auto;
+}
+
+.bg{
+    width: 64%;
+    height: 8vh;
+    background-color: #f3f3f3;
+    border-radius: -5px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: none;
+    position: fixed;
+    top: 8%;
+    z-index: 4;
+}
+
+.containerbg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
 }
